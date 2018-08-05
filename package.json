@@ -60,7 +60,15 @@
     "testMatch": [
       "**/tests/**/*.test.(ts|js)"
     ],
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+    "**/*.{ts,jsx}",
+    "!**/node_modules/**",
+    "!**/dist/**",
+    "!**/vendor/**",
+    "!**/coverage/**",
+    "!**/webpack.config.js"]
   },
   "eslintConfig": {
     "plugins": []
