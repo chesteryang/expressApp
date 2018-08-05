@@ -16,3 +16,7 @@ npm i -D @types/body-parser @types/express @types/dotenv
 ```
 12. Get express type lint config - https://github.com/types/express/blob/master/tslint.json
     and remove some older settings
+```
+git remote add github https://github.com/chesteryang/expressApp.git
+git push -u github master
+```
