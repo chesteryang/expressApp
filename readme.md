@@ -20,3 +20,11 @@ npm i -D @types/body-parser @types/express @types/dotenv
 git remote add github https://github.com/chesteryang/expressApp.git
 git push -u github master
 ```
+13. Add tests
+```
+npm i -D jest @types/jest ts-jest
+npm i -D supertest @types/supertest mocha chai @types/chai
+```
+
+14. Pass tests
+15. Make npm start, npm test working.
