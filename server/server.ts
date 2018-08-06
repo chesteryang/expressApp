@@ -1,4 +1,3 @@
-import { Server } from 'http';
 import express, { Express } from 'express';
 import * as dotenv from 'dotenv';
 import * as bodyParser from 'body-parser';
@@ -33,12 +32,4 @@ app.use('/graphql', graphqlHTTP({
   graphiql: true
 }));
 
-const server: Server = app.listen(app.get('port'), () => {
-  console.log(('App is running at http://localhost:%d in %s mode'),
-    app.get('port'), app.get('env'));
-  console.log(('App GraphQL server is running at http://localhost:%d/graphql in %s mode'),
-    app.get('port'), app.get('env'));
-  console.log('Press CTRL-C to stop\n');
-});
-
-export default server;
+export default app;

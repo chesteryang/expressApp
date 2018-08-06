@@ -1,13 +1,6 @@
-import { Server } from 'http';
 import supertest from 'supertest';
 import { expect } from 'chai';
-import app from '../../server/server';
-
-let server: Server;
-
-beforeAll(() => {
-  server = app.listen(2800);
-});
+import server from '../../server';
 
 describe('GET /', () => {
   it('should return 200 OK', () => {
