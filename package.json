@@ -35,9 +35,13 @@
     "webpack-cli": "^3.1.0"
   },
   "dependencies": {
+    "@types/express-graphql": "^0.6.1",
+    "@types/graphql": "^0.13.4",
     "body-parser": "^1.18.3",
     "dotenv": "^6.0.0",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql": "^0.13.2"
   },
   "jest": {
     "globals": {
@@ -63,12 +67,13 @@
     "testEnvironment": "node",
     "collectCoverage": true,
     "collectCoverageFrom": [
-    "**/*.{ts,jsx}",
-    "!**/node_modules/**",
-    "!**/dist/**",
-    "!**/vendor/**",
-    "!**/coverage/**",
-    "!**/webpack.config.js"]
+      "**/*.{ts,jsx}",
+      "!**/node_modules/**",
+      "!**/dist/**",
+      "!**/vendor/**",
+      "!**/coverage/**",
+      "!**/webpack.config.js"
+    ]
   },
   "eslintConfig": {
     "plugins": []
